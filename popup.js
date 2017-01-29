@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
               }
             }
-          tryToPlayNext();
+          document.querySelector('audio').volume = 0.2;
+          setTimeout(tryToPlayNext, 7300);
 
           })
 
