@@ -1,0 +1,16 @@
+{
+ "manifest_version": 2,
+ "name": "News reader",
+ "version": "1.0",
+
+ "permissions": [
+   "tabs", "http://*/*", "https://*/*", "activeTab"
+ ],
+
+ "browser_action": {
+     "default_title": "Set this page's color.",
+
+     "default_popup": "popup.html"
+ }
+
+}
