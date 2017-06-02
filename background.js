@@ -10,8 +10,8 @@ chrome.extension.onMessage.addListener(
 );
 
 function func() {
-  chrome.tabs.executeScript(null,{code:"var x = document.querySelector('.Body').textContent; x"}, (results) => {
-    var sentencies = results[0].split('.');
+  chrome.tabs.executeScript(null,{code:"var x = document.querySelector('.nd-ViewArea__text').textContent; x"}, (results) => {
+    var sentencies = results[0].split('. ');
     var currentSent = 0;
     var voices = window.speechSynthesis.getVoices().filter((voice) => {return ~voice.lang.indexOf('ru')});
 
@@ -33,7 +33,7 @@ function func() {
       }
     }
 //  sadsada
-  setTimeout(tryToPlayNext, 7300);
+  setTimeout(tryToPlayNext, 3000);
 
   })
 
