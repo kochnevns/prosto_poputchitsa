@@ -1,0 +1,39 @@
+body {
+  width: 400px;
+  height: 140px;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+body { font-family: "Nunito", sans-serif; font-size: 24px; }
+a    { text-decoration: none; }
+p    { text-align: center; }
+sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+button {
+  box-shadow:         1px 1px 14px 0px rgba(50, 50, 50, 0.56);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0C5;
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin: 1em auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    width: 236px;
+    height: 86px;
+    background: #0D6;
+    border: 1px solid #0D6;
+    color: #FFF;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+button:hover {
+  cursor: pointer;
+}
